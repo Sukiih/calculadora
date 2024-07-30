@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(37, 1, 71, 0.5), rgba(3, 0, 5, 0.712)), url('https://media.wnyc.org/i/1500/1111/l/80/1/Numbers.png');
+
+
+}
+
+.calculadora {
+    width: 300px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: calc(100% - 40px);
+    margin: 20px 10px 5px 10px;
+    padding: 20px 10px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(136, 123, 139);
+    color: black;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #29022c;
+    color: #fff;
+}
+
+.operador, .borrar {
+    background-color: #662379;
+    color: #fff;
+}
+
+.numero {
+    background-color: #f2f2f2;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bottom-row button {
+    margin-top: -10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+    background-color: #662379;
+    color: #fff;
+}
+
+.bottom-row button:hover {
+    background-color: #29022c;
+}
